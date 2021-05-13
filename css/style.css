@@ -1454,7 +1454,7 @@ ul.portfolio li.active {
     }
 }
 
-@media only screen and (min-width: 770px) and (max-width: 992px){
+@media only screen and (min-width: 768px) and (max-width: 991px){
     .circles{   
         height: 515px;
     }
@@ -1486,7 +1486,7 @@ ul.portfolio li.active {
 
 }
 
-@media only screen and (min-width: 993px) and (max-width: 1200px){
+@media only screen and (min-width: 992px) and (max-width: 1199px){
     .circles{   
         height: 555px;
     }
@@ -1518,7 +1518,7 @@ ul.portfolio li.active {
 }
 
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 1200px){
     .circles{   
         height: 665px;
     }
