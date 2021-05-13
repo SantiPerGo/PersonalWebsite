@@ -1438,7 +1438,7 @@ ul.portfolio li.active {
 }
 
 /* Responsive */
-@media only screen and (max-width: 770px){   
+@media only screen and (max-width: 767px){   
     .preloader p {
         left: 47%;
     }
