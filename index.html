@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
     
@@ -37,10 +37,23 @@
 	   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     
+      <script>
+        var i = 0;
+        setInterval(fadeDivs, 5000);
+        var images = ['images/santi2.png', 'images/santi.png'];
+
+        function fadeDivs() {
+            i = i < images.length ? i : 0;
+            $('.cambioDeImagen').fadeOut(250, function(){
+                $(this).attr('src', images[i]).fadeIn(250);
+                i++;
+            })
+        }
+      </script>
 
  </head>
 
-  <body>
+  <body onload="fadeDivs()">
     
 	  <!-- Preloader Start -->
     <div class="preloader">
@@ -84,7 +97,7 @@
                                         </li>
                                         <li><a class="smoth-scroll" href="#testimonials">Reseñas</a>
                                         </li>
-                                        <li><a class="smoth-scroll" href="#portfolio">Información Útil</a>
+                                        <li><a class="smoth-scroll" href="#portfolio">Portfolio</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -120,7 +133,7 @@
                     <div class="margin-top-150">
                         
                      <div class="table-responsive">
-					    <table class="table">
+					  <table class="table">
 							<tr>
 							    <td>Nombre</td>
 								<td>Santiago Pérez Gómez</td>
@@ -135,7 +148,7 @@
 							</tr>
 							<tr>
 								<td>Ocupación</td>
-								<td>Estudiante de<br>ESCOM,IPN</td>
+								<td>Estudiante de ESCOM, IPN</td>
 							 </tr>
 							<tr>
 								<td>Teléfono</td>
@@ -145,10 +158,6 @@
 								<td>CV</td>
 								<td style="background-color: #f7639a;"><a href="images/CV.pdf" target="_blank" data-toggle="tooltip" data-placement="top" title="Descarga mi CV">Curriculum Vitae.pdf</a></td>
 							</tr>
-              <tr>
-								<td>Llave Pública</td>
-								<td style="background-color: #f7639a;"><a href="images/Llave publica de Betito" target="_blank" data-toggle="tooltip" data-placement="top" title="Descarga mi llave pública">Mi Llave Pública</a></td>
-							</tr>
 						</table>
 					  </div>
                      </div>
@@ -156,7 +165,7 @@
                  
                  <div class="col-md-5 col-sm-6">
                     <div class="me-image">
-                      <img src="images/santi.png" alt="">
+                      <img src="images/santi3.png" class="cambioDeImagen" alt="">
                   </div>
                 </div>
               </div>
@@ -304,7 +313,7 @@
 					<div class="experience-content">
 						<h3>Programación</h3>
 						<p>Me gusta la programación, y, aunque en menor proporción, también los circuitos,
-              por lo cual me disfruto de lo que hago.</p>
+              por lo cual disfruto de lo que hago.</p>
 					</div>
 				 </div>
 				
@@ -414,7 +423,7 @@
              <div class="statistics-icon"><i class="icon-energy"></i>
              </div>
              <div class="statistics-content">
-               <div><span data-count="17" class="statistics-count">17</span></div><span>Proyectos Completados</span>
+               <div><span data-count="18" class="statistics-count">18</span></div><span>Proyectos Completados</span>
              </div>
            </div>
          </div>
@@ -424,7 +433,7 @@
              <div class="statistics-icon"><i class="icon-emotsmile"></i>
              </div>
              <div class="statistics-content">
-               <div> <span data-count="15" class="statistics-count">15</span></div><span>Estudiantes Satisfechos</span>
+               <div> <span data-count="20" class="statistics-count">20</span></div><span>Estudiantes Satisfechos</span>
              </div>
            </div>
          </div>
@@ -434,7 +443,7 @@
              <div class="statistics-icon"><i class="icon-social-youtube"></i>
              </div>
              <div class="statistics-content">
-               <div><span data-count="18" class="statistics-count">18</span></div><span>Videollamadas Realizadas</span>
+               <div><span data-count="20" class="statistics-count">20</span></div><span>Videollamadas Realizadas</span>
              </div>
            </div>
          </div>
@@ -460,7 +469,7 @@
           </div>
           
           <div class="row">
-            <div class="col-md-offset-3 col-sm-offset-2 col-md-6 col-sm-8">
+            <div class="col-md-offset-3 col-sm-offset-2 col-md-7 col-sm-8">
               <div class="testimonial-carousel-list margin-top-20">
               
                 <div class="testimonial-word text-center">
@@ -562,11 +571,12 @@
           <div class="row">
               <div class="col-sm-12">
                   <div class="section-title">
-                      <h2>Información Útil</h2>
+                      <h2>Portfolio</h2>
                         <div class="divider dark">
              <i class="icon-picture"></i>
              </div>
-                      <p>Este es un pequeño apartado para conocer más acerca de la criptografía</p>
+                      <p>Este es un pequeño apartado que contiene algunos
+                         de los proyectos que he realizado</p>
                   </div>
               </div>
           </div>
@@ -575,9 +585,9 @@
             <div class="col-md-2">
               <ul class="portfolio">
                   <li class="filter" data-filter="all">Todos</li>
-                  <li class="filter" data-filter=".apps">Hechos</li>
-                  <li class="filter" data-filter=".mockups">Famoso</li>
-                  <li class="filter" data-filter=".wordpress">AES</li>
+                  <li class="filter" data-filter=".mockups">Vídeos</li>
+                  <li class="filter" data-filter=".apps">Imágenes</li>
+                  <!--<li class="filter" data-filter=".wordpress">AES</li>-->
               </ul>
             </div>
           
@@ -587,48 +597,56 @@
               
                   <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
                       <div class="item">
-                          <a href="images/portfolio/criptografia.jpg" class="portfolio-popup" title="Project Title">
-                              <img src="images/portfolio/criptografia.jpg" alt="">
+                          <a href="images/portfolio/display.jpg" class="portfolio-popup" title="Display 7 Segmentos Gigante">
+                              <img src="images/portfolio/display.jpg" alt="">
                           </a>
                       </div>
                   </div>
                   
                   <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
                       <div class="item">
-                          <a href="images/portfolio/criptografia2.png" class="portfolio-popup" title="Project Title">
-                              <img src="images/portfolio/criptografia2.png" alt="">
+                          <a href="images/portfolio/constancia.png" class="portfolio-popup" title="Concurso del CIEBT">
+                              <img src="images/portfolio/constancia.png" alt="">
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
+                      <div class="item">
+                          <a href="images/portfolio/vrml.png" class="portfolio-popup" title="Curso de Realidad Virtual">
+                              <img src="images/portfolio/vrml.png" alt="">
+                          </a>
+                      </div>
+                  </div>
+
+                  <div class="col-md-4 col-sm-6 col-xs-12 mix apps">
+                    <div class="item">
+                        <a href="images/portfolio/graffiti.jpg" class="portfolio-popup" title="Grafitti">
+                            <img src="images/portfolio/graffiti.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                  
+                  <div class="col-md-4 col-sm-6 col-xs-12 mix mockups">
+                      <div class="item">
+                          <a href="https://www.youtube.com/watch?v=gmIJZuimXto" class="portfolio-popup2">
+                            <img src="https://img.youtube.com/vi/gmIJZuimXto/hqdefault.jpg" >
                           </a>
                       </div>
                   </div>
                   
                   <div class="col-md-4 col-sm-6 col-xs-12 mix mockups">
                       <div class="item">
-                          <a href="images/portfolio/julioCesar.PNG" class="portfolio-popup" title="Project Title">
-                              <img src="images/portfolio/julioCesar2.png" alt="">
+                          <a href="https://www.youtube.com/watch?v=oz-mz6EhP2Y" class="portfolio-popup2">
+                            <img src="https://img.youtube.com/vi/oz-mz6EhP2Y/hqdefault.jpg" >
                           </a>
                       </div>
                   </div>
                   
-                  <div class="col-md-4 col-sm-6 col-xs-12 mix mockups">
+                  <div class="col-md-4 col-sm-6 col-xs-12 mix mockups" title="Project Title">
                       <div class="item">
-                          <a href="https://www.youtube.com/watch?v=Qwpm5ttnnbs" class="portfolio-popup2">
-                            <img src="https://img.youtube.com/vi/Qwpm5ttnnbs/hqdefault.jpg" >
-                          </a>
-                      </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6 col-xs-12 mix wordpress">
-                      <div class="item">
-                          <a href="https://www.youtube.com/watch?v=tzj1RoqRnv0" class="portfolio-popup2">
-                            <img src="https://img.youtube.com/vi/tzj1RoqRnv0/hqdefault.jpg" >
-                          </a>
-                      </div>
-                  </div>
-                  
-                  <div class="col-md-4 col-sm-6 col-xs-12 mix apps" title="Project Title">
-                      <div class="item">
-                          <a href="https://www.youtube.com/watch?v=Oxt60h8YPYA" class="portfolio-popup2">
-                            <img src="https://img.youtube.com/vi/Oxt60h8YPYA/hqdefault.jpg" >
+                          <a href="https://www.youtube.com/watch?v=fpTXTmorhQs" class="portfolio-popup2">
+                            <img src="https://img.youtube.com/vi/fpTXTmorhQs/hqdefault.jpg" >
                           </a>
                       </div>
                   </div>
