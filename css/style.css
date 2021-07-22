@@ -33,9 +33,7 @@
   17. UiPasta Credit
  
 
-*/
-
-
+*/ 
 
 /* Global Style */
 .iconosPersonales{
@@ -942,6 +940,7 @@ ul.portfolio li.active {
 .testimonial-word img {
 	margin: 0 auto;
     max-width: 140px;
+    margin-bottom: 10px;
 }
 
 .testimonial-word span {
@@ -1453,6 +1452,27 @@ ul.portfolio li.active {
 }
 
 /* Responsive */
+@media only screen and (max-width: 556px){
+    .testimonial-carousel-list {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+@media only screen and (min-width: 557px) and (max-width: 767px){
+    .testimonial-carousel-list {
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .testimonial-carousel-list {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+}
+
 @media only screen and (max-width: 767px){   
     .preloader p {
         left: 47%;
