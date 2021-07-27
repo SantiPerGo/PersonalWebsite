@@ -32,26 +32,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
     
     <!-- Particulas -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
-    
-      <script>
-        var i = 0;
-        setInterval(fadeDivs, 5000);
-        var images = ['images/santi2.png', 'images/santi.png'];
-
-        function fadeDivs() {
-            i = i < images.length ? i : 0;
-            $('.cambioDeImagen').fadeOut(250, function(){
-                $(this).attr('src', images[i]).fadeIn(250);
-                i++;
-            })
-        }
-      </script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> 
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
  </head>
 
-  <body onload="fadeDivs()">
+  <body>
     
 	  <!-- Preloader Start -->
     <div class="preloader">
