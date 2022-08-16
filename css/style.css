@@ -324,8 +324,9 @@ fieldset {
   .profile-pic img {
     border-radius: 100%;
     -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    /*border: 7px solid rgba(255, 255, 255, 0);
+    -webkit-border-radius: 0%;
+    /*-webkit-border-radius: 100%;
+    border: 7px solid rgba(255, 255, 255, 0);
     animation: colorchange 10s infinite alternate;*/
     max-width: 300px;
     width: 100%;
