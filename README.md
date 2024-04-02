@@ -1,4 +1,4 @@
-<img src="./img/website_screenshot.png" alt="Website Screenshot Example" style="width: 100%; height: auto;"></img>
+<img src="./images/website_screenshot.png" alt="Website Screenshot Example" style="width: 100%; height: auto;"></img>
 
 # Personal Portfolio Project
 
